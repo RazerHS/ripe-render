@@ -1,6 +1,6 @@
 <script>
     import "$lib/app.scss"
-    import Hero from "$lib/components/hero.svelte"
+    import Hero from "$lib/components/Hero.svelte"
 </script>
 
 <style lang='scss'>
