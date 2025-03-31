@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+body {
+    text-wrap: balance;
+    font: var(--p);
+    color: var(--color-text);
+}
+
+@font-face {
+    font-family: 'NF-PAGKAKI';
+    font-style: normal;
+    font-weight: 400;
+    src: url('nf-pagkaki-Regular.ttf') format('truetype');
+}
+
+:root {
+    --color-primary: hsl(339, 71%, 61%);
+    --color-primary-light: hsl(339, 71%, 81%);
+    --color-primary-dark: hsl(339, 71%, 41%);
+    --color-secondary: hsl(54, 100%, 79%);
+    --color-secondary-light: hsl(54, 100%, 89%);
+    --color-secondary-dark: hsl(54, 100%, 69%);
+    --color-accent: hsl(151, 46%, 40%);
+    --color-accent-light: hsl(151, 46%, 60%);
+    --color-accent-dark: hsl(151, 46%, 20%);
+    --color-background: hsl(207, 65%, 60%);
+    --color-background-light: hsl(207, 65%, 80%);
+    --color-background-dark: hsl(207, 65%, 40%);
+    --color-text: hsl(0, 0%, 0%);
+
+    --border-radius: 10px;
+    --divider-height: 2px;
+
+    --ff: 'Metrophobic', serif;
+    --ff-heading: 'NF-PAGKAKI', serif;
+
+    --font-h1: clamp(3rem, 2.6rem + 2vw, 5rem);
+    --font-h2: clamp(1.75rem, 1.6rem + 0.75vw, 2.5rem);
+    --font-h3: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+
+    --h1: bold var(--font-h1)/1.4em var(--ff-heading);
+    --h2: bold var(--font-h2)/1.2em var(--ff-heading);
+    --h3: bold var(--font-h3)/1.2em var(--ff);
+    --p: 1.25rem/1.2em var(--ff);
+
+    --spacing-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+    --spacing-2xs: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
+    --spacing-xs: clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem);
+    --spacing-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+    --spacing-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
+    --spacing-l: clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem);
+    --spacing-xl: clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem);
+    --spacing-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
+    --spacing-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+}
+
+h1 {
+    font: var(--h1);
+}
+
+h2 {
+    font: var(--h2);
+    margin: var(--spacing-l) 0;
+}
+
+h3 {
+    font: var(--h3);
+    margin: var(--spacing-m) 0;
+}
+
+p {
+    font: var(--p);
+    margin: var(--spacing-m) 0;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+a:hover {
+color: var(--color-primary-dark);
+}
+
+div .spacing-3xs {
+    height: var(--spacing-3xs);
+}
+
+div .spacing-2xs {
+    height: var(--spacing-2xs);
+}
+
+div .spacing-xs {
+    height: var(--spacing-xs);
+}
+
+div .spacing-s {
+    height: var(--spacing-s);
+}
+
+div .spacing-m {
+    height: var(--spacing-m);
+}
+
+div .spacing-l {
+    height: var(--spacing-l);
+}
+
+div .spacing-xl {
+    height: var(--spacing-xl);
+}
+
+div .spacing-2xl {
+    height: var(--spacing-2xl);
+}
+
+div .spacing-3xl {
+    height: var(--spacing-3xl);
+}
+
+section {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+.center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing4);
+    flex-wrap: wrap;
+}
+
+.flex > * {
+    flex: 1;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
