@@ -29,6 +29,20 @@
         --bg-image: url('bg_texture_2.png');
     }
 
+    .bg-filter {
+        background-color: hsl(341, 21%, 26%, 0.5);
+     }
+
+     a {
+        color: var(--color-white);
+        text-underline-offset: 0.2em;
+        transition: text-decoration-color 200ms, text-underline-offset 200ms;
+     }
+
+     a:hover {
+        text-underline-offset: 0.1em;
+    }      
+
     .content {
         position: relative;
     }
@@ -80,10 +94,6 @@
         scale: 0.7;
         transition: all 1s linear;
     }
-
-    .glide__slide--active {
-        border: red 5px solid;
-    }
    
     .glide__slide {
         img {
@@ -112,7 +122,7 @@
 
     .glide__arrow {
         position: absolute;
-        background-color: #fde047;
+        background-color: var(--color-lighter-yellow);
         color: #333;
         border: none;
         width: 40px;
@@ -142,6 +152,8 @@
 </style>
 
 <section>
+    <img src="splash_2.png" alt="" class="bg">
+    <div class="bg-filter"></div>
     <div class="bg-divider"></div>
     <div class="content">
         <div class="spacing-xl"></div>
@@ -149,7 +161,7 @@
             <img src="/teeko_logo_outline.png" alt="Teeko Logo" class="teeko-logo">
         </div>    
         <div class="carousel-container full-bleed">
-            <h2>Screenshots & Gameplay</h2>
+            <h2>Screenshots</h2>
             <div class="spacing-xl"></div>
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">

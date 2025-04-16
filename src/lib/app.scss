@@ -23,41 +23,92 @@ body {
 
 :root {
     --color-primary: hsl(339, 71%, 61%);
-    --color-primary-light: hsl(339, 71%, 81%);
-    --color-primary-dark: hsl(339, 71%, 41%);
-    --color-primary-dark-transparent: hsla(339, 71%, 41%, 0.5);
-
     --color-secondary: hsl(54, 100%, 79%);
-    --color-secondary-light: hsl(54, 100%, 89%);
-    --color-secondary-light-transparent: hsla(54, 100%, 89%, 0.5);
-    --color-secondary-dark: hsl(54, 100%, 69%);
-    --color-secondary-dark-transparent: hsla(54, 100%, 69%, 0.5);
-
     --color-accent: hsl(151, 46%, 40%);
-    --color-accent-light: hsl(151, 46%, 60%);
-    --color-accent-dark: hsl(151, 45%, 20%);
-    --color-accent-dark-transparent: hsla(151, 45%, 20%, 0.5);
-
     --color-background: hsl(207, 65%, 60%);
-    --color-background-light: hsl(207, 65%, 80%);
-    --color-background-dark: hsl(207, 65%, 40%);
-    --color-background-dark-transparent: hsla(207, 65%, 40%, 0.5);
+    
+    --color-darker-black: #1d1b1e;
+    --color-dark-black: #1e1b1e;
+    --color-dark-gray: #252431;
+    --color-gray: #42505f;
+    --color-lighter-gray: #a2bbac;
+    --color-white: #ffffff;
+
+    --color-darker-brown: #3c3337;
+    --color-dark-brown: #51353e;
+    --color-brown: #744349;
+    --color-light-brown: #a3665a;
+    --color-lighter-brown: #cf8e67;
+
+    --color-darker-blue: #353a4a;
+    --color-dark-blue: #2b3b54;
+    --color-blue: #424e9b;
+    --color-bright-blue: #4c7cd0;
+    --color-light-blue: #5dbdff;
+    --color-lighter-blue: #2edcff;
+    --color-bright-light-blue: #47f9e6;
+    --color-white-blue: #d6ffd7;
+    --color-white-light-blue: #eaffe4;
+
+    --color-aquamarine: #507b8d;
+    --color-light-aquamarine: #55cfd7;
+    --color-lighter-aquamarine: #72cfc3;
+
+    --color-darker-red: #7b2e4f;
+    --color-red: #b6374f;
+    --color-bright-red: #f0504a;
+
+    --color-dark-pink: #ca5951;
+    --color-bright-pink: #e25587;
+    --color-coral: #f59f8d;
+    --color-light-coral: #ffceba;
+    --color-lighter-coral: #fbd1b9;
+
+    --color-darker-green: #305c5a;
+    --color-dark-green: #236565;
+    --color-green: #379668;
+    --color-bright-green: #90e465;
+
+    --color-darker-yellow: #bc633d;
+    --color-dark-yellow: #c15121;
+    --color-yellow: #f58123;
+    --color-bright-yellow: #ffbc51;
+    --color-lighter-yellow: #fff595;
+    --color-white-yellow: #fffadd;
+
+    --color-purple: #8a3c6e;
+
+    --border-yellow: 1px solid var(--color-lighter-yellow);
+
+    --icon-filter-blue: invert(29%) sepia(30%) saturate(1887%) hue-rotate(201deg) brightness(91%) contrast(83%) drop-shadow(0px 0px 0px white);
+    --icon-filter-bright-blue: invert(42%) sepia(32%) saturate(454%) hue-rotate(152deg) brightness(100%) contrast(91%) drop-shadow(0px 0px 0px white);
+    --icon-filter-light-blue: invert(74%) sepia(30%) saturate(4962%) hue-rotate(180deg) brightness(103%) contrast(105%) drop-shadow(0px 0px 0px white);
+    --icon-filter-lighter-blue: invert(78%) sepia(38%) saturate(3679%) hue-rotate(157deg) brightness(103%) contrast(104%) drop-shadow(0px 0px 0px white);
+    --icon-filter-green: invert(47%) sepia(28%) saturate(836%) hue-rotate(99deg) brightness(100%) contrast(86%) drop-shadow(0px 0px 0px white);
+    --icon-filter-dark-pink: invert(55%) sepia(47%) saturate(763%) hue-rotate(314deg) brightness(78%) contrast(103%) drop-shadow(0px 0px 0px white);
+    --icon-filter-bright-pink: invert(43%) sepia(31%) saturate(1101%) hue-rotate(287deg) brightness(100%) contrast(93%) drop-shadow(0px 0px 0px white);
+    --icon-filter-yellow: invert(80%) sepia(46%) saturate(7053%) hue-rotate(346deg) brightness(100%) contrast(93%) drop-shadow(0px 0px 0px white);
+    --icon-filter-bright-yellow: invert(88%) sepia(43%) saturate(2585%) hue-rotate(317deg) brightness(101%) contrast(101%) drop-shadow(0px 0px 0px white);
+    --icon-filter-dark-brown: invert(20%) sepia(9%) saturate(1967%) hue-rotate(290deg) brightness(92%) contrast(86%) drop-shadow(0px 0px 0px white);
+
+    --transition-hover: all 0.05s ease-out;
+    --transition-idle: all 0.1s ease-out;
 
     --color-text: hsl(0, 0%, 0%);
 
     --border-radius: 10px;
     --divider-height: 2px;
 
+    --ff-heading: 'NF-PAGKAKI', serif;
     --ff: 'Metrophobic', serif;
-    --ff-heading: 'Metrophobic', serif;
 
     --font-h1: clamp(3rem, 2.6rem + 2vw, 5rem);
     --font-h2: clamp(1.75rem, 1.6rem + 0.75vw, 2.5rem);
     --font-h3: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
 
     --h1: bold var(--font-h1)/1.4em var(--ff-heading);
-    --h2: bold var(--font-h2)/1.2em var(--ff-heading);
-    --h3: bold var(--font-h3)/1.2em var(--ff);
+    --h2: bold var(--font-h2)/1em var(--ff-heading);
+    --h3: bold var(--font-h3)/1em var(--ff);
     --p: 1.25rem/1.2em var(--ff);
 
     --spacing-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
@@ -73,12 +124,18 @@ body {
 
 h1 {
     font: var(--h1);
+    font-weight: 200;
+    color: var(--color-secondary);
+    text-shadow: 2px 2px 4px var(--color-primary);   
 }
 
 h2 {
     font: var(--h2);
     margin: var(--spacing-l) 0;
-}
+    font-weight: 200;
+    color: var(--color-secondary);
+    text-shadow: 2px 2px 4px var(--color-primary);   
+} 
 
 h3 {
     font: var(--h3);
@@ -88,10 +145,12 @@ h3 {
 p {
     font: var(--p);
     margin: var(--spacing-m) 0;
+    color: white;
+    font-weight: 600;
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--color-white);
     text-decoration: none;
   }
 
@@ -138,9 +197,8 @@ div .spacing-3xl {
 section {
     --_bg-color: var(--bg-color);
     --_bg-image: var(--bg-image);
-    position: relative;
 
-    background: linear-gradient(var(--_bg-color), var(--_bg-color)), var(--_bg-image);
+    position: relative;
 
     .bg-divider {
         margin: auto;
@@ -149,11 +207,31 @@ section {
         width: 100%;
         position: absolute;
         top: -32px;
-        filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.5));
+        pointer-events: none;
+        filter: drop-shadow(0px 0px 5px black);
         
         .flipped {
             transform: rotateY(180deg);
         }
+    }
+
+    .bg {
+        position: absolute;
+        z-index: -2;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+    .bg-filter {
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+        background-color: hsl(180, 49%, 27%, 0.7);
     }
 }
 
@@ -193,11 +271,12 @@ section {
 //selector not working within MainContent.svelte style block
 .glide__slide--active {
     transition: all 0.1s ease-out;
+    border: var(--border-yellow);
 }
 
 .full-bleed {
-    width: 100vw;
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 

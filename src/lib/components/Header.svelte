@@ -1,25 +1,34 @@
 <style lang='scss'>
     header {
-        width: 95%;
-        height: 72px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        background-color: var(--color-dark-black);
+        border-bottom: var(--border-yellow);
+        z-index: 100;
+    }
+
+    .main-nav {
         display: flex;
         gap: var(--spacing-l);
         align-items: center;
         justify-content: space-between;
         padding: 0 var(--spacing-s);
+        width: 90%; 
+        height: 72px;
     }
 
     nav {
         display: flex;
+        align-items: center;
         gap: var(--spacing-l);
-        font-size: var(--font-size-m);
 
         a {
-            color: black;
+            color: var(--color-lighter-yellow);
+            font-size: 0.8em;
         }
 
         a:hover {
-            color: var(--color-accent-light);
             transition: all 0.1s ease-out;
         }
     }      
@@ -33,11 +42,13 @@
 </style>
 
 <header>
-    <img src="/ai-banana-logo-temp.png" alt="Temp Logo">
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#games">Games</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div class="main-nav">
+        <img src="/ai-banana-logo-temp.png" alt="Temp Logo">
+        <nav>
+            <h2><a href="#home">Home</a></h2>
+            <h2><a href="#games">Games</a></h2>
+            <h2><a href="#about">About</a></h2>
+            <h2><a href="#contact">Contact</a></h2>
+        </nav>
+    </div>
 </header>
