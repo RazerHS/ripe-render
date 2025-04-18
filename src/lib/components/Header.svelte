@@ -15,7 +15,9 @@
         justify-content: space-between;
         padding: 0 var(--spacing-l);
         width: 90%; 
+        max-width: 1080px;
         height: 72px;
+        margin: auto;
     }
 
     nav {

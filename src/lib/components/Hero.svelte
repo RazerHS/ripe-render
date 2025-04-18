@@ -128,7 +128,7 @@
                 <div class="spacing-l"></div>
                 <div class="column cta">
                         <div class="btn download">
-                            <a href="#"><h2><span>Download Demo</span></h2></a>
+                            <a href="https://store.steampowered.com/app/3650150/Teeko/" target="_blank"><h2><span>Download Demo</span></h2></a>
                     </div>
                 </div>
             </div>   

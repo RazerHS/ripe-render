@@ -201,10 +201,13 @@ section {
     position: relative;
 
     .bg-divider {
-        margin: auto;
         background: url('/assets/divider.png') no-repeat;
         height: 100%;
         width: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 2000px;
         position: absolute;
         top: -32px;
         pointer-events: none;

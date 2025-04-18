@@ -69,6 +69,7 @@
 
     .carousel-container {
         padding: --var(--spacing-l);
+        max-width: 1080px;
 
         h2 {
             text-align: center;
@@ -127,7 +128,6 @@
         position: absolute;
         background-color: var(--color-lighter-yellow);
         color: #333;
-        border: none;
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -135,7 +135,6 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        font-size: 18px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         transition: all 0.2s ease;
     }
