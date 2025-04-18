@@ -10,12 +10,12 @@ body {
     font: var(--p);
     color: var(--color-text);
 }
-
+ 
 @font-face {
     font-family: 'NF-PAGKAKI';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/nf-pagkaki-Regular.ttf') format('truetype');
+    src: url('/fonts/nf-pagkaki-Regular.ttf') format('truetype');
 }
 
 :root {
@@ -202,7 +202,7 @@ section {
 
     .bg-divider {
         margin: auto;
-        background: url('divider.png') no-repeat;
+        background: url('/assets/divider.png') no-repeat;
         height: 100%;
         width: 100%;
         position: absolute;

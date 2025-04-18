@@ -26,7 +26,6 @@
 <style lang='scss'>
     section {
         --bg-color: var(--color-accent-dark-transparent);
-        --bg-image: url('bg_texture_2.png');
     }
 
     .bg-filter {
@@ -156,13 +155,13 @@
 </style>
 
 <section id='main-content'>
-    <img src="splash_2.png" alt="" class="bg">
+    <img src="/assets/splash_2.png" alt="" class="bg">
     <div class="bg-filter"></div>
     <div class="bg-divider"></div>
     <div class="content">
         <div class="spacing-xl"></div>
         <div class="header">
-            <img src="/teeko_logo_outline.png" alt="Teeko Logo" class="teeko-logo">
+            <img src="/logos/teeko_logo_outline.png" alt="Teeko Logo" class="teeko-logo">
         </div>    
         <div class="carousel-container full-bleed">
             <h2>Screenshots</h2>

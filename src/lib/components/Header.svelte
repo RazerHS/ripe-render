@@ -57,7 +57,7 @@
 
 <header>
     <div class="main-nav">
-        <a href="#"><img src="/ai-banana-logo-temp.png" alt="Temp Logo"></a>
+        <a href="#"><img src="/logos/ai-banana-logo-temp.png" alt="Temp Logo"></a>
         <nav>
             <h2><a href="#home">Home</a></h2>
             <h2><a href="#main-content">Games</a></h2>

@@ -6,7 +6,6 @@
 <style lang='scss'>
     section {
         --bg-color: var(--color-secondary-light-transparent);
-        --bg-image: url('bg_texture_1.png');
     }
 
     .bg {
@@ -117,14 +116,14 @@
 
 <div class="bg"></div>
 <section id='home'>
-    <img src="splash_24.png" alt="" class="bg">
+    <img src="/assets/splash_24.png" alt="" class="bg">
     <div class="bg-filter"></div>
     <div class="content">
         <div class="spacing-xl"></div>
         <div class="spacing-xl"></div>
         <div class="grid full-bleed">
             <div class="summary column">
-                <img src="/teeko_logo_outline.png" alt="" class="teeko-logo">
+                <img src="/logos/teeko_logo_outline.png" alt="" class="teeko-logo">
                 <p>A story-rich 2D platformer/tower defense hybrid inspired by the annual Costa Rican <i>Día de Las Mascaradas</i> festival.</p>
                 <div class="spacing-l"></div>
                 <div class="column cta">

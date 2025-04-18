@@ -3,27 +3,27 @@
 
     let socials = [
         {
-            src: "/ig_logo.svg",
+            src: "/logos/ig_logo.svg",
             alt: "Instagram",
             href: "https://www.instagram.com/teekogame/",
         },
         {
-            src: "/bs_logo.svg",
+            src: "/logos/bs_logo.svg",
             alt: "Bluesky",
             href: "https://bsky.app/profile/teekogame.bsky.social",
         },
         {
-            src: "/yt_logo.svg",
+            src: "/logos/yt_logo.svg",
             alt: "Youtube",
             href: "https://www.youtube.com/channel/UCMt6NZs9XzGHfiaiDvBfc6g",
         },
         {
-            src: "/x_logo.svg",
+            src: "/logos/x_logo.svg",
             alt: "X",
             href: "https://x.com/TeekoGame",
         },
         {
-            src: "/fb_logo.svg",
+            src: "/logos/fb_logo.svg",
             alt: "Facebook",
             href: "https://www.facebook.com/profile.php?id=61575219172054",
         },
@@ -77,7 +77,7 @@
 
 <style lang='scss'>
     section {
-        --bg-image: url('splash_5_test.png');
+        --bg-image: url('/assets/splash_5_test.png');
     }
 
     .content {
@@ -211,7 +211,7 @@
 
 
 <section id='studio'>
-    <img src="splash_5_test.png" alt="" class="bg">
+    <img src="/assets/splash_5_test.png" alt="" class="bg">
     <div class="bg-filter"></div>
     <div class="bg-divider flipped"></div>
     <div class="content">
@@ -257,6 +257,6 @@
             <h2> {title} </h2>
             <p> {description} </p>
         </div>
-        <a href={href} target="_blank"><img src='ln_logo.svg' alt='LinkedIn' class='ln-icon svg-icon'></a>
+        <a href={href} target="_blank"><img src='/logos/ln_logo.svg' alt='LinkedIn' class='ln-icon svg-icon'></a>
     </div>
 {/snippet} 
