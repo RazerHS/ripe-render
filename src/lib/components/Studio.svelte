@@ -3,70 +3,74 @@
 
     let socials = [
         {
-            src: "/yt_logo.svg",
-            alt: "Youtube",
-            href: "https://www.youtube.com/@RipeRender",
-        },
-        {
-            src: "/fb_logo.svg",
-            alt: "Facebook",
-        },
-        {
             src: "/ig_logo.svg",
             alt: "Instagram",
-        },
-        {
-            src: "/x_logo.svg",
-            alt: "X",
+            href: "https://www.instagram.com/teekogame/",
         },
         {
             src: "/bs_logo.svg",
             alt: "Bluesky",
-        }
+            href: "https://bsky.app/profile/teekogame.bsky.social",
+        },
+        {
+            src: "/yt_logo.svg",
+            alt: "Youtube",
+            href: "https://www.youtube.com/channel/UCMt6NZs9XzGHfiaiDvBfc6g",
+        },
+        {
+            src: "/x_logo.svg",
+            alt: "X",
+            href: "https://x.com/TeekoGame",
+        },
+        {
+            src: "/fb_logo.svg",
+            alt: "Facebook",
+            href: "https://www.facebook.com/profile.php?id=61575219172054",
+        },
     ];
 
     let team = [
         {
             src: "team/teeko_antonio.png",
             title: 'Antonio Ercolani',
-            description: 'Founder, Meow',
-            linkedIn: 'https://www.linkedin.com/in/igikovacevic/',
+            description: 'Founder, Pixel Artist',
+            linkedIn: 'https://www.linkedin.com/in/antonioercolanirojas/',
         },
         {
             src: "team/diablo_igor.png",
             title: 'Igor Kovacevic',
-            description: 'Founder',
+            description: 'Founder, Programmer',
             linkedIn: 'https://www.linkedin.com/in/igikovacevic/',
         },
         {
             src: "team/toro_benji.png",
             title: 'Benji Savage',
-            description: 'Designer',
-            linkedIn: 'https://www.linkedin.com/in/igikovacevic/',
+            description: 'Wave Designer',
+            linkedIn: 'https://www.linkedin.com/in/besavage/',
         },
         {
             src: "team/llorona_lex.png",
             title: 'Lex Fezler',
             description: 'Narrative Designer',
-            linkedIn: 'https://www.linkedin.com/in/igikovacevic/',
+            linkedIn: 'https://www.linkedin.com/in/lex-fezler/',
         },
         {
             src: "team/bruja_carla.png",
             title: 'Carla Cerutti',
             description: 'Narrative Designer',
-            linkedIn: 'https://www.linkedin.com/in/igikovacevic/',
+            linkedIn: 'https://www.linkedin.com/in/carla-cerutti-4bb6a5256/',
         },
         {
             src: "team/abuela_lara.png",
             title: 'Lara Carrasco',
-            description: '2D Art',
-            linkedIn: 'https://www.linkedin.com/in/igikovacevic/',
+            description: 'Concept Artist',
+            linkedIn: 'https://www.linkedin.com/in/lara-carrasco-alvarez/',
         },
         {
             src: "team/politico_ari.png",
-            title: 'Ari Phillips',
-            description: '2D Art',
-            linkedIn: 'https://www.linkedin.com/in/igikovacevic/',
+            title: 'Ariana Phillips',
+            description: 'Concept Artist',
+            linkedIn: 'https://www.linkedin.com/in/ariana-phillips-rojas/',
         }
     ];
 </script>
@@ -128,15 +132,15 @@
     }
 
     .svg-icon {
-            filter: var(--icon-filter-bright-yellow);
-            transition: var(--transition-idle);
-        }
+        filter: var(--icon-filter-lighter-yellow);
+        transition: var(--transition-idle);
+    }
 
-        .svg-icon:hover {
-            filter: var(--icon-filter-yellow);
-            transition: var(--transition-idle);
-            scale: 1.05;
-        }
+    .svg-icon:hover {
+        filter: var(--icon-filter-bright-yellow);
+        transition: var(--transition-idle);
+        transform: translateY(-2px);
+    }
 
     .team-member {
         display: flex;
@@ -168,7 +172,7 @@
         }
 
         h2 {
-            margin: 0
+            margin-bottom: var(--spacing-2xs);
         }
 
         p {
@@ -184,12 +188,29 @@
         display: grid;
         place-items: center;
         text-align: center;
+
+        a {
+            color: var(--color-lighter-yellow);
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-thickness: 0;
+            text-underline-offset: 3px;
+            font-size: 1.1em;
+            transition: var(--transition-idle);
+        }
+
+        a:hover {
+            color: var(--color-bright-yellow);
+            transition: var(--transition-idle);
+            transform: translateY(-2px);
+            text-decoration-thickness: 1px;
+        }
     }
 
 </style>
 
 
-<section>
+<section id='studio'>
     <img src="splash_5_test.png" alt="" class="bg">
     <div class="bg-filter"></div>
     <div class="bg-divider flipped"></div>
@@ -204,22 +225,24 @@
             </div>
         </div>
         <div class="spacing-m"></div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <h2>Reach out to us!</h2>
-            <p>Are you a contact creator or streamer who wants to try Teeko? Or a publisher and are interested in our games? Contact us - we'd love to chat!</p>
+            <p>Are you a contact creator or streamer who wants to try Teeko? Or a publisher interested in our games? Ship us a message - we'd love to chat!</p>
             <div class="socials">
                 {#each socials as social}
-                    {@render contactButton(social.src, social.alt)}
+                    {@render contactButton(social.src, social.alt, social.href)}
                 {/each}
             </div>
+            <div class="spacing-m"></div>
+            <a href="mailto:riperendergames@gmail.com">riperendergames@gmail.com</a>
         </div>
     </div>
     <div class="spacing-xl"></div>
 </section>
 
-{#snippet contactButton(src, alt)}
+{#snippet contactButton(src, alt, href)}
     <div class="contact-btn-container">
-        <img {src} {alt} class='svg-icon'>
+        <a {href} target="_blank"><img {src} {alt} class='svg-icon'></a>
     </div>
 {/snippet} 
 
@@ -234,6 +257,6 @@
             <h2> {title} </h2>
             <p> {description} </p>
         </div>
-        <a href={href}><img src='ln_logo.svg' alt='LinkedIn' class='ln-icon svg-icon'></a>
+        <a href={href} target="_blank"><img src='ln_logo.svg' alt='LinkedIn' class='ln-icon svg-icon'></a>
     </div>
 {/snippet} 

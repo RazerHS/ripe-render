@@ -2,9 +2,6 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html { 
     scroll-behavior: smooth;
 }
 
@@ -18,7 +15,7 @@ body {
     font-family: 'NF-PAGKAKI';
     font-style: normal;
     font-weight: 400;
-    src: url('nf-pagkaki-Regular.ttf') format('truetype');
+    src: url('fonts/nf-pagkaki-Regular.ttf') format('truetype');
 }
 
 :root {
@@ -78,6 +75,8 @@ body {
 
     --color-purple: #8a3c6e;
 
+    --gradient-steam-gray: linear-gradient(130deg, #3b4351, #282e39);
+
     --border-yellow: 1px solid var(--color-lighter-yellow);
 
     --icon-filter-blue: invert(29%) sepia(30%) saturate(1887%) hue-rotate(201deg) brightness(91%) contrast(83%) drop-shadow(0px 0px 0px white);
@@ -90,6 +89,7 @@ body {
     --icon-filter-yellow: invert(80%) sepia(46%) saturate(7053%) hue-rotate(346deg) brightness(100%) contrast(93%) drop-shadow(0px 0px 0px white);
     --icon-filter-bright-yellow: invert(88%) sepia(43%) saturate(2585%) hue-rotate(317deg) brightness(101%) contrast(101%) drop-shadow(0px 0px 0px white);
     --icon-filter-dark-brown: invert(20%) sepia(9%) saturate(1967%) hue-rotate(290deg) brightness(92%) contrast(86%) drop-shadow(0px 0px 0px white);
+    --icon-filter-lighter-yellow: invert(87%) sepia(29%) saturate(580%) hue-rotate(351deg) brightness(107%) contrast(103%) drop-shadow(0px 0px 0px white);
 
     --transition-hover: all 0.05s ease-out;
     --transition-idle: all 0.1s ease-out;
@@ -155,7 +155,7 @@ a {
   }
 
 a:hover {
-color: var(--color-primary-dark);
+    color: var(--color-primary-dark);
 }
 
 div .spacing-3xs {

@@ -35,12 +35,16 @@
 
      a {
         color: var(--color-white);
-        text-underline-offset: 0.2em;
-        transition: text-decoration-color 200ms, text-underline-offset 200ms;
+        text-underline-offset: 7px;
+        text-decoration: underline 2px currentColor;
+        text-decoration-thickness: 0px;
+        transition: all 0.15s ease-out;
      }
 
      a:hover {
-        text-underline-offset: 0.1em;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 1px;
+        transition: all 0.15s ease-out;
     }      
 
     .content {
@@ -151,7 +155,7 @@
     }
 </style>
 
-<section>
+<section id='main-content'>
     <img src="splash_2.png" alt="" class="bg">
     <div class="bg-filter"></div>
     <div class="bg-divider"></div>
