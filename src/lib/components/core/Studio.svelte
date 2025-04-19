@@ -188,18 +188,27 @@
         display: grid;
         place-items: center;
         text-align: center;
+        
+        .email::before {
+            display: inline-block; 
+            content: '✉ ';
+            font-size: 1.4em;
+            padding-right: 12px;
+            vertical-align: -5px;
+        }
 
-        a {
+        .email {
             color: var(--color-lighter-yellow);
             font-weight: 700;
             text-decoration: underline;
+            text-decoration-skip: '✉ ';
             text-decoration-thickness: 0;
             text-underline-offset: 3px;
             font-size: 1.1em;
             transition: var(--transition-idle);
         }
-
-        a:hover {
+       
+        .email:hover {
             color: var(--color-bright-yellow);
             transition: var(--transition-idle);
             transform: translateY(-2px);
@@ -234,7 +243,7 @@
                 {/each}
             </div>
             <div class="spacing-m"></div>
-            <a href="mailto:riperendergames@gmail.com">riperendergames@gmail.com</a>
+            <a href="mailto:riperendergames@gmail.com" class='email'>riperendergames@gmail.com</a>
         </div>
     </div>
     <div class="spacing-xl"></div>

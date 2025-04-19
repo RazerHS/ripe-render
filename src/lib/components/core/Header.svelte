@@ -1,3 +1,7 @@
+<script>
+    import '$lib/app.scss';
+</script>
+
 <style lang='scss'>
     header {
         width: 100%;

@@ -271,15 +271,89 @@ section {
     overflow: hidden;
 }
 
-//selector not working within MainContent.svelte style block
-.glide__slide--active {
-    transition: all 0.1s ease-out;
-    border: var(--border-yellow);
-}
-
 .full-bleed {
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
 }
+
+.carousel {
+    filter: drop-shadow(0px 0px 4px var(--color-dark-black));
+
+    .flickity-button-icon {
+        visibility: hidden;
+    }
+
+    .carousel-cell {
+        transition: border 0.3s ease-out, opacity 0.3s ease-out;
+        opacity: 0.5;
+    }
+
+    .is-selected {
+        border: 3px solid var(--color-lighter-yellow);
+        box-sizing: border-box;
+        transition: border 0.3s ease-out, opacity 0.3s ease-out;
+        opacity: 1;
+    }
+
+    .flickity-prev-next-button {
+        scale: 1.5;
+        width: 30px;
+        height: 30px;
+        border-radius: var(--border-radius);
+        background: var(--color-lighter-yellow);
+        transition: var(--transition-idle);
+        
+        &::before {
+            color: var(--color-gray);
+            font-size: 1.2em;
+        }
+
+        &:hover {
+            background: var(--color-bright-yellow);
+            scale: 1.52;
+            transition: var(--transition-idle);
+            transform: translateY(calc(-50% - 1px));
+        }
+    }
+
+    .flickity-prev-next-button.next {
+        right: calc(var(--spacing-xl) * -1);
+
+        &::before {
+            content: '🠊';
+        }
+    }
+
+     .flickity-prev-next-button.previous {
+        left: calc(((var(--spacing-xl) + 10px) * -1)); /* extra -10px margin because on the carousel images the margin is also -10px */
+        
+        &::before {
+            color: var(--color-gray);
+            content: '🠈';
+        }
+    }
+
+    .flickity-page-dots {
+        bottom: -40px;
+
+        .dot {
+            height: 4px;
+            width: 40px;
+            margin: 0;
+            border-radius: 10px;
+        }
+
+        .is-selected {
+            background-color: var(--color-lighter-yellow);
+            transition: opacity 0.1s ease-out;
+        }
+    }
+
+    .is-fullscreen .carousel-cell {
+        height: 100%;
+    }
+}
+
+
 
