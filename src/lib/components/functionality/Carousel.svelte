@@ -16,10 +16,9 @@
         var flkty = new Flickity( elem, {
             cellAlign: 'center',
             wrapAround: true,
-            autoPlay: 2000,
+            // autoPlay: 2000,
             selectedAttraction: 0.01,
             friction: 0.15,
-            lazyLoad: 2,
             initialIndex: 2,
         });
     }
@@ -28,8 +27,8 @@
 <style lang='scss'>
 
    .carousel {
-        max-width: 1500px;
-    }
+        max-width: min(150dvw, 2000px);
+    }   
 
     .carousel-cell {
         aspect-ratio: 16 / 9;
@@ -44,7 +43,14 @@
     }
 
     .carousel-cell {
-        width: 50%;
+        aspect-ratio: 16 / 9;
+        width: clamp(200px, 100dvw, 1000px);
+        display: grid;
+        place-items: center;
+
+        @media screen and (max-width: 1024px) {
+            width: 98dvw;
+        }
     }
      
 </style>
@@ -57,6 +63,6 @@
 
 {#snippet carouselImage(index)}
     <div class="carousel-cell">
-        <img data-flickity-lazyload-src="/assets/screenshots/screenshot_{index}.jpg" alt="Screenshot {index}">
+        <img src="/assets/screenshots/screenshot_{index}.jpg" alt="Screenshot {index}">
     </div>
 {/snippet} 

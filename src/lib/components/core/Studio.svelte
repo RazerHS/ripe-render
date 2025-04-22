@@ -81,21 +81,7 @@
     }
 
     .content {
-        display: grid;
-        place-items: center;
-        width: 100%;
-        row-gap: var(--spacing-m);
-    }
-
-    .studio-info {
-        display: flex;
-        max-width: 800px;
-        justify-content: center;
-        gap: var(--spacing-3xl);
-
-        h3 {
-            margin-top: 0;
-        }
+        text-align: center;
     }
 
     h1, h2 {
@@ -104,31 +90,6 @@
 
     p {
         color: white;
-    }
-
-    .studio-img {
-        background-color: hsl(0, 2%, 16%);
-        background-size: cover;
-        background-position: center;
-        aspect-ratio: 1 / 1;
-        width: 500px;
-        border-radius: var(--border-radius);
-    }
-
-    .socials {
-        display: flex;
-        gap: var(--spacing-s);
-        
-        img {
-            max-width: 80%;
-        }
-    }
-
-    .team {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: var(--spacing-2xl);
-        row-gap: var(--spacing-l);
     }
 
     .svg-icon {
@@ -142,15 +103,50 @@
         transform: translateY(-2px);
     }
 
-    .team-member {
+    .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: var(--spacing-l);
+        max-width: 80dvw;
+    }
+
+    .team-member-column {
         display: flex;
         flex-direction: column;
         gap: var(--spacing-m);
         margin: auto;
+        width: 300px;
+        text-align: center;
+
+        @media screen and (max-width: 1024px) {
+            width: 200px;
+            gap: var(--spacing-s);
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 150px;
+        }
+
+        @media screen and (max-width: 450px) {
+            width: 100px;
+
+            .heading {
+                h2 {
+                    font-size: 1.6rem;
+                    margin-bottom: var(--spacing-3xs);
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
 
         .frame {
             width: 100%;
             height: 100%;
+            aspect-ratio: 1 / 1;
             border-radius: 50%;
             color: white;
             background-color: var(--color-secondary);
@@ -158,17 +154,27 @@
 
        .member-img {
             border-radius: 50%;
-            max-width: 300px;
-            max-height: 300px;
+            width: 100%;
+            height: 100%;
         }
 
         a {
             margin: auto;
-        }
+            width: 72px;
+            aspect-ratio: 1 / 1;
 
-        .ln-icon {
-            max-width: 72px;
-            max-height: 72px;
+            @media screen and (max-width: 1230px) {
+                width: 64px;
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 44px;
+            }
+
+            .ln-icon {
+                max-width: 100%;
+                max-height: 100%;
+            }
         }
 
         h2 {
@@ -188,13 +194,33 @@
         display: grid;
         place-items: center;
         text-align: center;
+
+        p {
+            padding: 0 var(--spacing-3xs);
+        }
+
+        .socials {
+            display: flex;
+            gap: var(--spacing-s);
+            padding: 0 var(--spacing-2xs);
+            justify-content: center;
+            align-items: center;
         
+            img {
+                max-width: 80%;
+            
+            }
+        }
+
         .email::before {
-            display: inline-block; 
-            content: '✉ ';
-            font-size: 1.4em;
-            padding-right: 12px;
-            vertical-align: -5px;
+
+            @media screen and (min-width: 360px) {
+                display: inline-block; 
+                content: '✉ ';
+                font-size: 1.4em;
+                padding-right: 12px;
+                vertical-align: -5px;
+            }
         }
 
         .email {
@@ -216,24 +242,36 @@
         }
     }
 
-</style>
+    .desktop {
+        @media screen and (max-width: 1300px) {
+            display: none;
+        }
+    }
 
+    .mobile {
+        @media screen and (min-width: 1300px) {
+            display: none;
+        }
+    }
+</style>
 
 <section id='studio'>
     <img src="/assets/splash_5_test.png" alt="" class="bg">
     <div class="bg-filter"></div>
     <div class="bg-divider flipped"></div>
     <div class="content">
-        <div class="spacing-3xl"></div>
+        <div class="spacing-3xl desktop"></div>
+        <div class="spacing-3xl mobile"></div>
         <h1>We are Ripe Render.</h1>
-        <div class="studio-info">
-            <div class="team">
-                {#each team as member}
-                    {@render teamMember(member.src, 'Meow', member.linkedIn, member.title, member.description)}
-                {/each}
-            </div>
+        <div class="spacing-l mobile"></div>
+        <div class="spacing-xl desktop"></div>
+        <div class="team-grid full-bleed">
+            {#each team as member}
+                {@render teamMember(member.src, 'Meow', member.linkedIn, member.title, member.description)}
+            {/each}
         </div>
-        <div class="spacing-m"></div>
+        <div class="spacing-2xl"></div>
+        <div class="spacing-l mobile"></div>
         <div class="contact" id="contact">
             <h2>Reach out to us!</h2>
             <p>Are you a contact creator or streamer who wants to try Teeko? Or a publisher interested in our games? Ship us a message - we'd love to chat!</p>
@@ -256,7 +294,7 @@
 {/snippet} 
 
 {#snippet teamMember(src, alt, href, title, description)}
-    <div class="team-member">
+    <div class="team-member-column">
         <div class="image">
             <div class="frame">
                 <img {src} {alt} class='member-img '>

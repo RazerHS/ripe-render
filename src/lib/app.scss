@@ -297,16 +297,24 @@ section {
     }
 
     .flickity-prev-next-button {
-        scale: 1.5;
-        width: 30px;
-        height: 30px;
+        aspect-ratio: 1 / 1;
         border-radius: var(--border-radius);
         background: var(--color-lighter-yellow);
         transition: var(--transition-idle);
+        top: calc(100% + 35px);
+
+        @media screen and (max-width: 768px) {
+            height: 28px;
+            width: 28px;
+        }
         
         &::before {
             color: var(--color-gray);
-            font-size: 1.2em;
+            font-size: 1.4rem;
+
+            @media screen and (max-width: 768px) {
+                font-size: 1rem;
+            }
         }
 
         &:hover {
@@ -315,22 +323,22 @@ section {
             transition: var(--transition-idle);
             transform: translateY(calc(-50% - 1px));
         }
-    }
 
-    .flickity-prev-next-button.next {
-        right: calc(var(--spacing-xl) * -1);
+        &.next {
+            right: 3%;
 
-        &::before {
-            content: '🠊';
+            &::before {
+                content: '🠊';
+            }
         }
-    }
 
-     .flickity-prev-next-button.previous {
-        left: calc(((var(--spacing-xl) + 10px) * -1)); /* extra -10px margin because on the carousel images the margin is also -10px */
-        
-        &::before {
-            color: var(--color-gray);
-            content: '🠈';
+        &.previous {
+            left: 3%;
+
+            &::before {
+                color: var(--color-gray);
+                content: '🠈';
+            }
         }
     }
 

@@ -47,13 +47,26 @@
     }
 
     .teeko-logo {
-        max-width: 300px;
+        max-width: min(300px, 90%);
     }
 
     .footer {
         display: grid;
         place-items: center;
         margin: auto;
+        text-align: center;
+    }
+
+    .desktop {
+        @media screen and (max-width: 1300px) {
+            display: none;
+        }
+    }
+
+    .mobile {
+        @media screen and (min-width: 1300px) {
+            display: none;
+        }
     }
 
 </style>
@@ -74,10 +87,10 @@
         </div>
         <div class="spacing-xl"></div>
             <div class="footer">
-            <h2>Download <a href='https://drive.google.com/drive/folders/1Qj7aqEayrbyJJMpOLCH-inZYItY74FdI'>Press Kit.</a> Work in progress!</h2>
+            <h2>Download <a href='https://drive.google.com/drive/folders/1Qj7aqEayrbyJJMpOLCH-inZYItY74FdI'>Press Kit!</a></h2>
         </div>
-        <div class="spacing-xl"></div>
-        <div class="spacing-xl"></div>
+        <div class="spacing-xl desktop"></div>
+        <div class="spacing-l mobile"></div>
     </div>
 </section>
 
