@@ -63,7 +63,7 @@
             title: 'Lara Carrasco',
             description: 'Concept Artist',
             linkedIn: 'https://www.linkedin.com/in/lara-carrasco-alvarez/',
-            flagSrc: '/assets/flags/costa_rica.png'
+            flagSrc: '/assets/flags/spain.png'
         },
         {
             src: "team/toro_benji.png",
