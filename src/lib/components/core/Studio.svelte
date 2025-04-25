@@ -196,6 +196,7 @@
             .flag {
                 height: 40px;
                 aspect-ratio: 4 / 3;
+                border: 1px solid var(--color-dark-black);
 
                 @media screen and (max-width: 1230px) {
                     height: 32px;
