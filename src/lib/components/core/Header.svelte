@@ -60,86 +60,96 @@
         }
 
         &.mobile {
-            .menu-toggle {
-                position: relative;
+            width: 40px;
+            height: 100%;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            position: relative;
+
+            .hamburger-container {
+                position: absolute;
+                z-index: 5;
+                top: calc(50% - 12px); /* 3 spans with heights of 4px */
+            }
+        
+            input
+            {
                 display: block;
-                -webkit-touch-callout: none;
-                -webkit-user-select: none;
-                user-select: none;
-            
-                input
-                {
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    
-                    cursor: pointer;
-                    opacity: 0; 
-                    z-index: 2;
-
-                    -webkit-touch-callout: none;
-
-                    &:checked ~ span {
-                        opacity: 1;
-                        transform: rotate(45deg) translate(-2px, -1px);
-                    }
-
-                    &:checked ~ span:nth-last-child(3) {
-                        opacity: 0;
-                        transform: rotate(0deg) scale(0.2, 0.2);
-                    }
-
-                    &:checked ~ span:nth-last-child(2) {
-                        transform: rotate(-45deg) translate(0, -1px);
-                    }
-
-                    &:checked ~ .menu-container {
-                        transform: translate(-105px, -55px); 
-                    }
-                }
+                position: absolute;
+                width: 100%;
                 
-                span {
-                    display: block;
-                    width: 33px;
-                    height: 4px;
-                    margin-bottom: 5px;
-                    position: relative;
-                    
-                    background: var(--color-lighter-yellow);
-                    border-radius: 3px;
-                    
-                    z-index: 1;
-                    
-                    transform-origin: 3px 1.5px;
-                    
-                    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+                cursor: pointer;
+                opacity: 0; 
+                z-index: 2;
 
-                    &:first-child {
-                        transform-origin: 0% 0%;
-                    }
+                -webkit-touch-callout: none;
 
-                    &:nth-last-child(3) {
-                        transform-origin: 0% 100%;
-                    }
+                &:checked ~ span {
+                    opacity: 1;
+                    transform: rotate(45deg) translate(-2px, -1px);
+                }
+
+                &:checked ~ span:nth-last-child(3) {
+                    opacity: 0;
+                    transform: rotate(0deg) scale(0.2, 0.2);
+                }
+
+                &:checked ~ span:nth-last-child(2) {
+                    transform: rotate(-45deg) translate(0, -1px);
+                }
+
+                &:checked ~ .menu-container > .menu {
+                    transform: translateX(0px);
+                }
+            }
+            
+            span {
+                display: block;
+                width: 33px;
+                height: 4px;
+                margin-bottom: 5px;
+                
+                background: var(--color-lighter-yellow);
+                border-radius: 3px;
+                
+                transform-origin: 3px 1.5px;
+                
+                transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+
+                &:first-child {
+                    transform-origin: 0% 0%;
+                }
+
+                &:nth-last-child(3) {
+                    transform-origin: 0% 100%;
                 }
             }
 
             .menu-container {
                 position: absolute;
-                width: 150px;
+                left: max(-20dvw, -80px);
+                width: min(30dvw, 146px);
+                top: -24px;
                 height: 340px;
-                background: var(--gradient-steam-gray);
-                transform: translate(300px, -55px); /* magic number */
-                transition: transform 0.3s ease, background-color 0.3s ease;
-                border: 1px solid var(--color-lighter-yellow);
+                float: right;
+                overflow: hidden;
+
+                z-index: -1;
             }
 
             .menu {
                 display: flex;
+                transition: transform 0.3s ease, background-color 0.3s ease;
+                border: 1px solid var(--color-lighter-yellow);
                 flex-direction: column;
                 grid-template-rows: repeat(4, 1fr);
                 gap: var(--spacing-l);
-                padding: var(--spacing-2xl) var(--spacing-l);
+                padding-top: var(--spacing-2xl);
+                background: var(--gradient-steam-gray);
+                transform: translateX(160px);
+
+                z-index: -10;
 
                 h2 {
                     margin: 0;
@@ -178,7 +188,7 @@
             <h2><a href="#contact">Contact</a></h2>
         </nav>
         <nav class="mobile">
-            <div class="menu-toggle">
+            <div class="hamburger-container">
                 <input bind:checked={inputChecked} type="checkbox" class="menu-checkbox"/>
                 <span></span>
                 <span></span>

@@ -33,45 +33,52 @@
         {
             src: "team/teeko_antonio.png",
             title: 'Antonio Ercolani',
-            description: 'Founder, Pixel Artist',
+            description: 'Creator, Founder, Pixel Artist',
             linkedIn: 'https://www.linkedin.com/in/antonioercolanirojas/',
+            flagSrc: '/assets/flags/costa_rica.png'
         },
         {
             src: "team/diablo_igor.png",
-            title: 'Igor Kovacevic',
+            title: 'Igor Kovacevic ',
             description: 'Founder, Programmer',
             linkedIn: 'https://www.linkedin.com/in/igikovacevic/',
-        },
-        {
-            src: "team/toro_benji.png",
-            title: 'Benji Savage',
-            description: 'Wave Designer',
-            linkedIn: 'https://www.linkedin.com/in/besavage/',
-        },
-        {
-            src: "team/llorona_lex.png",
-            title: 'Lex Fezler',
-            description: 'Narrative Designer',
-            linkedIn: 'https://www.linkedin.com/in/lex-fezler/',
+            flagSrc: '/assets/flags/serbia.png'
         },
         {
             src: "team/bruja_carla.png",
             title: 'Carla Cerutti',
             description: 'Narrative Designer',
             linkedIn: 'https://www.linkedin.com/in/carla-cerutti-4bb6a5256/',
-        },
-        {
-            src: "team/abuela_lara.png",
-            title: 'Lara Carrasco',
-            description: 'Concept Artist',
-            linkedIn: 'https://www.linkedin.com/in/lara-carrasco-alvarez/',
+            flagSrc: '/assets/flags/costa_rica.png'
         },
         {
             src: "team/politico_ari.png",
             title: 'Ariana Phillips',
             description: 'Concept Artist',
             linkedIn: 'https://www.linkedin.com/in/ariana-phillips-rojas/',
-        }
+            flagSrc: '/assets/flags/costa_rica.png'
+        },
+        {
+            src: "team/abuela_lara.png",
+            title: 'Lara Carrasco',
+            description: 'Concept Artist',
+            linkedIn: 'https://www.linkedin.com/in/lara-carrasco-alvarez/',
+            flagSrc: '/assets/flags/costa_rica.png'
+        },
+        {
+            src: "team/toro_benji.png",
+            title: 'Benji Savage',
+            description: 'Level Designer',
+            linkedIn: 'https://www.linkedin.com/in/besavage/',
+            flagSrc: '/assets/flags/indonesia.png'
+        },
+        {
+            src: "team/llorona_lex.png",
+            title: 'Lex Fezler',
+            description: 'Narrative Designer',
+            linkedIn: 'https://www.linkedin.com/in/lex-fezler/',
+            flagSrc: '/assets/flags/ukraine.png'
+        },
     ];
 </script>
 
@@ -158,22 +165,45 @@
             height: 100%;
         }
 
-        a {
-            margin: auto;
-            width: 72px;
-            aspect-ratio: 1 / 1;
-
-            @media screen and (max-width: 1230px) {
-                width: 64px;
-            }
-
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-m);
+        
             @media screen and (max-width: 768px) {
-                width: 44px;
+                gap: var(--spacing-s);
             }
 
-            .ln-icon {
-                max-width: 100%;
-                max-height: 100%;
+            a {
+                width: 72px;
+                aspect-ratio: 1 / 1;
+
+                @media screen and (max-width: 1230px) {
+                    width: 64px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    width: 44px;
+                }
+
+                .ln-icon {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .flag {
+                height: 40px;
+                aspect-ratio: 4 / 3;
+
+                @media screen and (max-width: 1230px) {
+                    height: 32px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    height: 20px;
+                }
             }
         }
 
@@ -267,14 +297,14 @@
         <div class="spacing-xl desktop"></div>
         <div class="team-grid full-bleed">
             {#each team as member}
-                {@render teamMember(member.src, 'Meow', member.linkedIn, member.title, member.description)}
+                {@render teamMember(member.src, 'Meow', member.linkedIn, member.title, member.description, member.flagSrc)}
             {/each}
         </div>
         <div class="spacing-2xl"></div>
         <div class="spacing-l mobile"></div>
         <div class="contact" id="contact">
             <h2>Reach out to us!</h2>
-            <p>Are you a contact creator or streamer who wants to try Teeko? Or a publisher interested in our games? Ship us a message - we'd love to chat!</p>
+            <p>Are you a content creator or streamer who wants to try Teeko? Or a publisher interested in our games? Ship us a message - we'd love to chat!</p>
             <div class="socials">
                 {#each socials as social}
                     {@render contactButton(social.src, social.alt, social.href)}
@@ -293,7 +323,7 @@
     </div>
 {/snippet} 
 
-{#snippet teamMember(src, alt, href, title, description)}
+{#snippet teamMember(src, alt, href, title, description, flagSrc)}
     <div class="team-member-column">
         <div class="image">
             <div class="frame">
@@ -304,6 +334,9 @@
             <h2> {title} </h2>
             <p> {description} </p>
         </div>
-        <a href={href} target="_blank"><img src='/logos/ln_logo.svg' alt='LinkedIn' class='ln-icon svg-icon'></a>
+        <div class="links">
+            <img src={flagSrc} alt="Flag" class='flag'>
+            <a href={href} target="_blank"><img src='/logos/ln_logo.svg' alt='LinkedIn' class='ln-icon svg-icon'></a>
+        </div>
     </div>
 {/snippet} 
