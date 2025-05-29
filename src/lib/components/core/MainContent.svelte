@@ -87,7 +87,7 @@
         </div>
         <div class="spacing-xl"></div>
             <div class="footer">
-            <h2>Download <a href='https://drive.google.com/drive/folders/1Qj7aqEayrbyJJMpOLCH-inZYItY74FdI'>Press Kit!</a></h2>
+            <h2>Find our <a href='https://riperender.com/press/'>Press Kit!</a></h2>
         </div>
         <div class="spacing-xl desktop"></div>
         <div class="spacing-l mobile"></div>

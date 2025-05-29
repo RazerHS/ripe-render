@@ -77,7 +77,7 @@
             title: 'Lex Fezler',
             description: 'Narrative Designer',
             linkedIn: 'https://www.linkedin.com/in/lex-fezler/',
-            flagSrc: '/assets/flags/norway.svg'
+            flagSrc: '/assets/flags/norway.png'
         },
     ];
 </script>

@@ -160,7 +160,7 @@
     }
 
     img {
-        max-height: 50px;
+        max-height: 70px;
         transform: rotateZ(-20deg);
         aspect-ratio: 1 / 1 ;
     }
@@ -180,7 +180,7 @@
 
 <header>
     <div class="main-nav">
-        <a href="#home"><img src="/logos/ai-banana-logo-temp.png" alt="Temp Logo"></a>
+        <a href="#home"><img src="/logos/ripe_render_logo.png" alt="Studio Logo"></a>
         <nav class='desktop'>
             <h2><a href="#home">Home</a></h2>
             <h2><a href="#main-content">Games</a></h2>
