@@ -79,6 +79,20 @@
             linkedIn: 'https://www.linkedin.com/in/lex-fezler/',
             flagSrc: '/assets/flags/norway.png'
         },
+        {
+            src: "team/diablo_igor.png",
+            title: 'Rinke Johannes Bruisma',
+            description: 'Music & Sound Design',
+            linkedIn: 'https://www.linkedin.com/in/rinke-johannes-bruinsma-79956a1b8/',
+            flagSrc: '/assets/flags/netherlands.png'
+        },
+        {
+            src: "team/bruja_carla.png",
+            title: 'Micha Blaauw',
+            description: 'Marketing',
+            linkedIn: 'https://www.linkedin.com/in/michablue/',
+            flagSrc: '/assets/flags/us.png'
+        },
     ];
 </script>
 

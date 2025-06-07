@@ -297,6 +297,7 @@ section {
     }
 
     .flickity-prev-next-button {
+        visibility: hidden;
         aspect-ratio: 1 / 1;
         border-radius: var(--border-radius);
         background: var(--color-lighter-yellow);
