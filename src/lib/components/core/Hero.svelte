@@ -233,7 +233,7 @@
 {#snippet downloadButton(platform)}
     <div class="column cta {platform}">
         <div class="btn download">
-            <a href="https://store.steampowered.com/app/3650150/Teeko/" target="_blank"><h2><span>Download Demo</span></h2></a>
+            <a href="https://store.steampowered.com/app/3650150/Teeko/" target="_blank"><h2><span>Wishlist Now!</span></h2></a>
             <div class="steam-logo">
                 <img src="/logos/steam_logo.png" alt="Steam Logo">  
             </div>
