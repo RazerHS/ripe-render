@@ -52,7 +52,7 @@
             flagSrc: '/assets/flags/costa_rica.png'
         },
         {
-            src: "team/politico_ari.png",
+            src: "team/llorona_lex.png",
             title: 'Ariana Phillips',
             description: 'Concept Artist',
             linkedIn: 'https://www.linkedin.com/in/ariana-phillips-rojas/',
