@@ -180,7 +180,7 @@
 
 <header>
     <div class="main-nav">
-        <a href="#home"><img src="/logos/ripe_render_logo.png" alt="Studio Logo"></a>
+        <a href="#home"><img src="/logos/ripe_render_logo_banana.png" alt="Studio Logo"></a>
         <nav class='desktop'>
             <h2><a href="#home">Home</a></h2>
             <h2><a href="#main-content">Games</a></h2>

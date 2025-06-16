@@ -129,7 +129,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         gap: var(--spacing-l);
-        max-width: 80dvw;
+        max-width: min(80dvw, 1920px);
     }
 
     .team-member-column {
@@ -329,6 +329,7 @@
             <a href="mailto:riperendergames@gmail.com" class='email'>riperendergames@gmail.com</a>
         </div>
     </div>
+    <div class="spacing-xl"></div>
     <div class="spacing-xl"></div>
 </section>
 

@@ -16,10 +16,10 @@
         var flkty = new Flickity( elem, {
             cellAlign: 'center',
             wrapAround: true,
-            // autoPlay: 2000,
+            autoPlay: 1500,
             selectedAttraction: 0.01,
             friction: 0.15,
-            initialIndex: 2,
+            initialIndex: 7,
         });
     }
 </script>

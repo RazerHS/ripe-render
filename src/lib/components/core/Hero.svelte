@@ -99,7 +99,7 @@
 
             iframe {
                 width: 100%;
-                height: 420px;
+                height: 380px;
                 border: 1px solid var(--color-lighter-yellow);
                 border-radius: var(--border-radius);
             }
@@ -181,6 +181,12 @@
         }
     }
 
+    .lags-badge {
+        display: flex;
+        justify-content: center;
+        height: 200px;
+    }
+
     .steam-widget {
         display: grid;
         place-items: center;
@@ -214,20 +220,22 @@
                 {@render downloadButton('desktop')}
             </div>   
             <div class="column trailer">
-                <iframe src="https://www.youtube.com/embed/UDEX8hPZDm8" title="Teeko - Reveal Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>    
-        </div>
+                <iframe src="https://www.youtube.com/embed/XooBIDYGdEw" title="Teeko - Official Trailer | Latin American Games Showcase 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>    
+            </div>
         <div class="spacing-m mobile"></div>
         {@render downloadButton('mobile')}
-        <div class="spacing-3xl desktop"></div>
-        <div class="spacing-m mobile"></div>
-        <div class="column steam-widget">
+        <div class="spacing-xs desktop"></div>
+        <div class="spacing-l mobile"></div>
+    </div>
+    <div class="lags-badge">
+        <img src="/assets/lags_badge_2025.png" alt="LAGS Sticker">
+    </div>
+    <div class="spacing-l"></div>
+    <div class="column steam-widget">
             <div class="spacing-s"></div>
             <iframe src="https://store.steampowered.com/widget/3650150/" frameborder="0" width="620" height="191"></iframe>   
         </div>  
-        <div class="spacing-m"></div>
-        <div class="spacing-xl"></div>
-    </div>
+    <div class="spacing-2xl"></div>
 </section>
 
 {#snippet downloadButton(platform)}

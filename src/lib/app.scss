@@ -285,14 +285,14 @@ section {
     }
 
     .carousel-cell {
-        transition: border 0.3s ease-out, opacity 0.3s ease-out;
+        transition: opacity 0.3s ease-out;
         opacity: 0.5;
     }
 
     .is-selected {
         border: 3px solid var(--color-lighter-yellow);
         box-sizing: border-box;
-        transition: border 0.3s ease-out, opacity 0.3s ease-out;
+        transition: opacity 0.3s ease-out;
         opacity: 1;
     }
 
