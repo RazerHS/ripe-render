@@ -45,7 +45,6 @@
         a {
             color: var(--color-lighter-yellow);
             font-size: 0.8em;
-            vertical-align: -10px;
             text-decoration: underline 2px hsl(54, 100%, 79%, 0);
             text-shadow: none;
             transition: all 0.15s ease-out;
@@ -161,7 +160,6 @@
 
     img {
         max-height: 70px;
-        transform: rotateZ(-20deg);
         aspect-ratio: 1 / 1 ;
     }
 
@@ -180,12 +178,13 @@
 
 <header>
     <div class="main-nav">
-        <a href="#home"><img src="/logos/ripe_render_logo_banana.png" alt="Studio Logo"></a>
+        <a href="#home"><img src="/logos/ripe_render_logo_white.png" alt="Studio Logo"></a>
         <nav class='desktop'>
             <h2><a href="#home">Home</a></h2>
             <h2><a href="#main-content">Games</a></h2>
             <h2><a href="#studio">About</a></h2>
             <h2><a href="#contact">Contact</a></h2>
+            <h2><a href="#partners">Partners</a></h2>
         </nav>
         <nav class="mobile">
             <div class="hamburger-container">
@@ -199,6 +198,7 @@
                         <h2><a onclick={inputChecked = false} href="#main-content">Games</a></h2>
                         <h2><a onclick={inputChecked = false} href="#studio">About</a></h2>
                         <h2><a onclick={inputChecked = false} href="#contact">Contact</a></h2>
+                        <h2><a onclick={inputChecked = false} href="#partners">Partners</a></h2>
                     </div>
                 </div>
             </div>

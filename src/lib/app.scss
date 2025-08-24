@@ -18,6 +18,13 @@ body {
     src: url('/fonts/nf-pagkaki-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'ShareTech';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/ShareTech-Regular.ttf') format('truetype');
+}
+
 :root {
     --color-primary: hsl(339, 71%, 61%);
     --color-secondary: hsl(54, 100%, 79%);
@@ -99,7 +106,7 @@ body {
     --border-radius: 10px;
     --divider-height: 2px;
 
-    --ff-heading: 'NF-PAGKAKI', serif;
+    --ff-heading: 'ShareTech', serif;
     --ff: 'Metrophobic', serif;
 
     --font-h1: clamp(3rem, 2.6rem + 2vw, 5rem);
