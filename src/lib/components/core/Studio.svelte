@@ -59,13 +59,6 @@
             flagSrc: '/assets/flags/costa_rica.png'
         },
         {
-            src: "team/abuela_lara.png",
-            title: 'Lara Carrasco',
-            description: 'Concept Artist',
-            linkedIn: 'https://www.linkedin.com/in/lara-carrasco-alvarez/',
-            flagSrc: '/assets/flags/spain.png'
-        },
-        {
             src: "team/toro_benji.png",
             title: 'Benji Savage',
             description: 'Level Designer',
@@ -122,7 +115,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         gap: var(--spacing-l);
-        max-width: min(80dvw, 1920px);
+        max-width: min(80dvw, 1600px);
     }
 
     .team-member-column {
