@@ -100,7 +100,6 @@
             iframe {
                 width: 100%;
                 height: 380px;
-                border: 1px solid var(--color-lighter-yellow);
                 border-radius: var(--border-radius);
             }
         }
@@ -146,7 +145,6 @@
             width: 320px;
             min-width: 50px;
             padding: var(--spacing-xs);
-            border: 3px solid var(--color-lighter-yellow);
             transition: all 0.2s ease-out;
             display: flex;
             align-items: center;
@@ -154,7 +152,6 @@
 
         .download:hover {
             background: var(--color-secondary);
-            border: 3px solid var(--color-gray);
             transform: translateY(-3px);
             transition: all 0.2s ease-out;
 
@@ -180,10 +177,14 @@
         }
     }
 
-    .lags-badge {
+    .badges {
         display: flex;
+        gap: var(--spacing-m);
         justify-content: center;
-        height: 200px;
+
+        img {
+            height: 180px;
+        }
     }
 
     .steam-widget {
@@ -213,7 +214,7 @@
         <div class="grid full-bleed">
             <div class="summary column">
                 <img src="/logos/teeko_logo_outline.png" alt="" class="teeko-logo">
-                <p>A story-rich 2D platformer/tower defense hybrid inspired by the annual Costa Rican <i>Día de Las Mascaradas</i> festival.</p>
+                <p> An action-packed platforming and tower defense hybrid inspired by Costa Rican <i>Día de Las Mascaradas</i> festival.</p>
                 <div class="spacing-l desktop"></div>
                 <div class="spacing-s mobile"></div>
                 {@render downloadButton('desktop')}
@@ -226,8 +227,9 @@
         <div class="spacing-xs desktop"></div>
         <div class="spacing-l mobile"></div>
     </div>
-    <div class="lags-badge">
-        <img src="/assets/lags_badge_2025.png" alt="LAGS Sticker">
+    <div class="badges">
+        <a href="https://www.esencialcostarica.com/en/" target="_blank"><img src="/logos/essencial_logo_white.png" alt="Essencial"></a>
+        <a href="https://www.lagshowcase.com/" target="_blank"><img src="/assets/lags_badge_2025.png" alt="LAGS Sticker"></a>
     </div>
     <div class="spacing-l"></div>
     <div class="column steam-widget">

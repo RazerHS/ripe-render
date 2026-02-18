@@ -74,14 +74,11 @@
 <section id='main-content'>
     <img src="/assets/splash_2.png" alt="" class="bg">
     <div class="bg-filter"></div>
-    <div class="bg-divider"></div>
     <div class="content">
-        <div class="spacing-xl"></div>
         <div class="header">
             <img src="/logos/teeko_logo_outline.png" alt="Teeko Logo" class="teeko-logo">
         </div>    
         <div class="carousel-container">
-            <h2>Screenshots</h2>
             <div class="spacing-m"></div>
             <Carousel />
         </div>
@@ -89,8 +86,7 @@
             <div class="footer">
             <h2>Find our <a href='https://riperender.com/press/' target="_blank">Press Kit!</a></h2>
         </div>
-        <div class="spacing-xl desktop"></div>
-        <div class="spacing-l mobile"></div>
+        <div class="spacing-m desktop"></div>
     </div>
 </section>
 

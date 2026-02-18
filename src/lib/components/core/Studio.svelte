@@ -154,6 +154,7 @@
             width: 100%;
             height: 100%;
             aspect-ratio: 1 / 1;
+            border: 2px solid var(--color-lighter-yellow);
             border-radius: 50%;
             color: white;
             background-color: var(--color-secondary);
@@ -289,10 +290,8 @@
 <section id='studio'>
     <img src="/assets/splash_5_test.png" alt="" class="bg">
     <div class="bg-filter"></div>
-    <div class="bg-divider flipped"></div>
     <div class="content">
-        <div class="spacing-3xl desktop"></div>
-        <div class="spacing-3xl mobile"></div>
+        <div class="spacing-l"></div>
         <h1>We are Ripe Render.</h1>
         <div class="spacing-l mobile"></div>
         <div class="spacing-xl desktop"></div>
@@ -315,7 +314,6 @@
             <a href="mailto:riperendergames@gmail.com" class='email'>riperendergames@gmail.com</a>
         </div>
     </div>
-    <div class="spacing-xl"></div>
     <div class="spacing-xl"></div>
 </section>
 

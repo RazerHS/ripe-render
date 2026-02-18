@@ -10,7 +10,6 @@
         position: sticky;
         top: 0;
         background: var(--gradient-steam-gray);
-        border-bottom: var(--border-yellow);
         z-index: 100;
     }
 
@@ -21,7 +20,7 @@
         justify-content: space-between;
         padding: 0 var(--spacing-l);
         width: 90%; 
-        max-width: 1080px;
+        max-width: 1800px;
         height: 72px;
         margin: auto;
 
@@ -43,7 +42,7 @@
         }
 
         a {
-            color: var(--color-lighter-yellow);
+            color: white;
             font-size: 0.8em;
             text-decoration: underline 2px hsl(54, 100%, 79%, 0);
             text-shadow: none;
@@ -159,8 +158,7 @@
     }
 
     img {
-        max-height: 70px;
-        aspect-ratio: 1 / 1 ;
+        max-height: 50px;
     }
 
     .desktop {
@@ -178,7 +176,7 @@
 
 <header>
     <div class="main-nav">
-        <a href="#home"><img src="/logos/ripe_render_logo_white.png" alt="Studio Logo"></a>
+        <a href="#home"><img src="/logos/ripe_render_logo_text_yellow.png" alt="Studio Logo"></a>
         <nav class='desktop'>
             <h2><a href="#home">Home</a></h2>
             <h2><a href="#main-content">Games</a></h2>

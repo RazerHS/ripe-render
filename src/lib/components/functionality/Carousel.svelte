@@ -56,13 +56,13 @@
 </style>
 
 <div class="carousel full-bleed">
-    {#each { length: 10 }, index}
+    {#each { length: 5 }, index}
         {@render carouselImage(index + 1)}
     {/each}
 </div>
 
 {#snippet carouselImage(index)}
     <div class="carousel-cell">
-        <img src="/assets/screenshots/screenshot_{index}.png" alt="Screenshot {index}">
+        <img src="/assets/screenshots/screenshot_{index}.jpg" alt="Screenshot {index}">
     </div>
 {/snippet} 
