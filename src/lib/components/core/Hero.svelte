@@ -220,7 +220,7 @@
                 {@render downloadButton('desktop')}
             </div>   
             <div class="column trailer">
-                <iframe src="https://www.youtube.com/embed/ICfMJ9WBARM" title="Teeko Gameplay Trailer  - 02/11/2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                <iframe src="https://www.youtube.com/embed/227J5A_LEZM" title="Teeko | Official Trailer | Summer Game Fest 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         <div class="spacing-m mobile"></div>
         {@render downloadButton('mobile')}
