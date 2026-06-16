@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <product>
   <title>Teeko</title>
-  <release-date>Winter 2025</release-date>
+  <release-date>Q3 2027</release-date>
   <website>https://riperender.com/</website>
 
   <!-- Link to request press copy: -->
   <press-copy-request></press-copy-request>
 
   <release-dates>
-    <release-date>Winter 2025</release-date>
+    <release-date>Q3 2027</release-date>
   </release-dates>
 
 <history>
@@ -27,15 +27,22 @@
       <link>https://store.steampowered.com/app/3650150/Teeko/</link>
     </platform>
      <platform>
-      <name>iOS</name>
+      <name>Nintendo Switch</name>
       <link></link>
     </platform>
     <platform>
-      <name>Android</name>
+      <name>Xbox</name>
     </platform>
   </platforms>
 
-  <description>Platformer meets tower defense in this story-rich game inspired by the Costa Rican Día de Las Mascaradas festival. One day, grandma Tita's kids get possessed by the spirits of the gigantes and begin to wreak havoc upon the land. It's now up to her pet sloth, Teeko, to save their town.</description>
+  <videos>
+    <video>
+      <name>Trailer</name>
+      <youtube>eCNh4tnDr2w</youtube>
+    </video>
+  </videos>
+
+  <description>Adventure through the seven provinces of Costa Rica as Teeko, a cute sloth tasked with defeating the rampaging gigante masks of Costa Rica’s Día de las Mascaradas festival. Jump, smash, and plant trees through the perfect mix of platforming and tower defense as you face hordes of enemies.</description>
 
   <features>
     <feature>
@@ -50,9 +57,6 @@
     <feature>
       30+ Powerful tower upgrades
     </feature>
-    <feature>
-      A unifying and heartfelt narrative
-    </feature>
   </features>
 
   <widgets>
@@ -63,6 +67,10 @@
     <award>
       <description>Latin American Games Showcase 2025 Official Selection</description>
       <info>June 7th, 2025</info>
+    </award>
+    <award>
+      <description>Latin American Games Showcase 2026 Official Selection</description>
+      <info>June 4th, 2026</info>
     </award>
   </awards>
 
@@ -92,18 +100,18 @@
     </credit>
 
     <credit>
-      <person>Lara Carrasco</person>
-      <role>Concept Artist</role>
-      <website>
-        https://www.linkedin.com/in/lara-carrasco-alvarez/
-      </website>
-    </credit>
-
-       <credit>
       <person>Rinke Johannes Bruinsma</person>
       <role>Music and Sound Design</role>
       <website>
         https://www.linkedin.com/in/rinke-johannes-bruinsma-79956a1b8/
+      </website>
+    </credit>
+
+     <credit>
+      <person>Daniel Quesada</person>
+      <role>Music</role>
+      <website>
+        https://www.danielquesadamusic.com/
       </website>
     </credit>
 
@@ -130,14 +138,6 @@
         https://www.linkedin.com/in/lex-fezler/
       </website>
     </credit>
-
-     <credit>
-      <person>Micha Blaauw</person>
-      <role>Marketing</role>
-      <website>
-        https://www.linkedin.com/in/michablue/
-      </website>
-     </credit>
   </credits>
 
   <contacts>

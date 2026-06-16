@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <company>
-  <title>Ripe Render</title>
+  <title>Ripe Render Games</title>
   <based-in>San Pedro, Costa Rica</based-in>
   <website>https://riperender.com</website>
  
   <press-contact>riperendergames@gmail.com</press-contact>
 
   <description>
-    Ripe Render is an emerging games studio based in San Pedro, Costa Rica and founded by Antonio Ercolani and Igor Kovacevic.  
+    Ripe Render is an emerging games studio based in San Pedro, Costa Rica. 
   </description>
   
   <awards>
@@ -16,7 +16,18 @@
       <description>Latin American Games Showcase 2025 Official Selection</description>
       <info>June 7th, 2025</info>
     </award>
+    <award>
+      <description>Latin American Games Showcase 2026 Official Selection</description>
+      <info>June 4th, 2026</info>
+    </award>
   </awards>
+
+  <trailers>
+    <trailer>
+      <name>Trailer</name>
+      <youtube>eCNh4tnDr2w</youtube>
+    </trailer>
+  </trailers>
 
   <credits>
     <credit>
@@ -37,9 +48,33 @@
 
     <credit>
       <person>Carla Cerutti</person>
-      <role>Narrative Designer</role>
+      <role>Narrative Designer, Marketing</role>
       <website>
         https://www.linkedin.com/in/carla-cerutti-4bb6a5256/
+      </website>
+    </credit>
+
+  <credit>
+      <person>Benji Savage</person>
+      <role>Wave Designer</role>
+      <website>
+        https://www.linkedin.com/in/besavage/
+      </website>
+    </credit>
+
+    <credit>
+      <person>Daniel Quesada</person>
+      <role>Music</role>
+      <website>
+        https://www.danielquesadamusic.com/
+      </website>
+    </credit>
+
+    <credit>
+      <person>Rinke Johannes Bruinsma</person>
+      <role>Music and Sound Design</role>
+      <website>
+        https://www.linkedin.com/in/rinke-johannes-bruinsma-79956a1b8/
       </website>
     </credit>
 
@@ -52,44 +87,13 @@
     </credit>
 
     <credit>
-      <person>Lara Carrasco</person>
-      <role>Concept Artist</role>
-      <website>
-        https://www.linkedin.com/in/lara-carrasco-alvarez/
-      </website>
-    </credit>
-    
-    <credit>
-      <person>Rinke Johannes Bruinsma</person>
-      <role>Music and Sound Design</role>
-      <website>
-        https://www.linkedin.com/in/rinke-johannes-bruinsma-79956a1b8/
-      </website>
-    </credit>
-
-    <credit>
-      <person>Benji Savage</person>
-      <role>Wave Designer</role>
-      <website>
-        https://www.linkedin.com/in/besavage/
-      </website>
-    </credit>
-
-    <credit>
       <person>Lex Fezler</person>
       <role>Concept Artist</role>
       <website>
         https://www.linkedin.com/in/lex-fezler/
       </website>
     </credit>
-
-     <credit>
-      <person>Micha Blaauw</person>
-      <role>Marketing</role>
-      <website>
-        https://www.linkedin.com/in/michablue/
-      </website>
-     </credit>
+   
   </credits>
 
   <contacts>
