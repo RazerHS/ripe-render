@@ -53,29 +53,22 @@
         },
         {
             src: "team/llorona_lex.png",
-            title: 'Ariana Phillips',
-            description: 'Concept Artist',
-            linkedIn: 'https://www.linkedin.com/in/ariana-phillips-rojas/',
-            flagSrc: '/assets/flags/costa_rica.png'
+            title: 'Kelvin Yap',
+            description: 'Production Intern',
+            linkedIn: 'https://www.linkedin.com/in/kelvin-yap-219348322/',
+            flagSrc: '/assets/flags/netherlands.png'
         },
         {
             src: "team/toro_benji.png",
-            title: 'Benji Savage',
-            description: 'Level Designer',
-            linkedIn: 'https://www.linkedin.com/in/besavage/',
-            flagSrc: '/assets/flags/indonesia.png'
+            title: 'Daniel Quesada',
+            description: 'Composer',
+            linkedIn: 'https://www.linkedin.com/in/danielquesada-music',
+            flagSrc: '/assets/flags/costa_rica.png'
         },
         {
-            src: "team/llorona_lex.png",
-            title: 'Lex Fezler',
-            description: 'Narrative Designer',
-            linkedIn: 'https://www.linkedin.com/in/lex-fezler/',
-            flagSrc: '/assets/flags/norway.png'
-        },
-        {
-            src: "team/diablo_igor.png",
+            src: "team/abuela_lara.png",
             title: 'Rinke Johannes Bruisma',
-            description: 'Music & Sound Design',
+            description: 'Comspoer & Sound Design',
             linkedIn: 'https://www.linkedin.com/in/rinke-johannes-bruinsma-79956a1b8/',
             flagSrc: '/assets/flags/netherlands.png'
         }

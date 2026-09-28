@@ -214,7 +214,7 @@
         <div class="grid full-bleed">
             <div class="summary column">
                 <img src="/logos/teeko_logo_outline.png" alt="" class="teeko-logo">
-                <p> An action-packed platforming and tower defense hybrid inspired by Costa Rican <i>Día de Las Mascaradas</i> festival.</p>
+                <p> Plant your defenses as Teeko, a sloth who joins his towers in battle by triggering their attacks and smashing enemy hordes from Costa Rica's <i>Día de las Mascaradas</i>.</p>
                 <div class="spacing-l desktop"></div>
                 <div class="spacing-s mobile"></div>
                 {@render downloadButton('desktop')}
