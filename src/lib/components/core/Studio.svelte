@@ -22,11 +22,6 @@
             alt: "X",
             href: "https://x.com/TeekoGame",
         },
-        {
-            src: "/logos/fb_logo.svg",
-            alt: "Facebook",
-            href: "https://www.facebook.com/profile.php?id=61575219172054",
-        },
     ];
 
     let team = [
@@ -52,14 +47,14 @@
             flagSrc: '/assets/flags/costa_rica.png'
         },
         {
-            src: "team/llorona_lex.png",
+            src: "team/toro_benji.png",
             title: 'Kelvin Yap',
             description: 'Production Intern',
             linkedIn: 'https://www.linkedin.com/in/kelvin-yap-219348322/',
             flagSrc: '/assets/flags/netherlands.png'
         },
         {
-            src: "team/toro_benji.png",
+            src: "team/llorona_lex.png",
             title: 'Daniel Quesada',
             description: 'Composer',
             linkedIn: 'https://www.linkedin.com/in/danielquesada-music',
